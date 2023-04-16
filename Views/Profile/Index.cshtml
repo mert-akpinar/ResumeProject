@@ -1,0 +1,43 @@
+﻿@using ResumeProject.Models
+@model List<tblProfile>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Profil Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Profil Başlığı</th>
+        <th>Profil Açıklaması</th>
+        <th>İsim</th>
+        <th>Mail</th>
+        <th>Adres</th>
+        <th>Telefon</th>
+        <th>Sosyal Medya1</th>
+        <th>Sosyal Medya2</th>
+        <th>Sosyal Medya2</th>
+        <th>Sosyal Medya4</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProfileID</td>
+            <td>@item.ProfileTitle</td>
+            <td>@item.ProfileDescription</td>
+            <td>@item.Name</td>
+            <td>@item.Mail</td>
+            <td>@item.Adress</td>
+            <td>@item.Phone</td>
+            <td>@item.SocilaMedia1</td>
+            <td>@item.SocialMedia2</td>
+            <td>@item.SocialMedia3</td>
+            <td>@item.SocialMedia4</td>
+            <td><a href="/Profile/DeleteProfile/@item.ProfileID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Profile/UpdateProfile/@item.ProfileID" class="btn btn-outline-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Profile/AddProfile" class="btn btn-primary">Yeni Profil Girişi</a>

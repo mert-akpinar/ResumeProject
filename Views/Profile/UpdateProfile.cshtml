@@ -1,0 +1,46 @@
+﻿@model ResumeProject.Models.tblProfile
+
+@{
+    ViewBag.Title = "UpdateProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Profil Güncelleme  Sayfası</h2>
+<form method="post">
+
+    <label> Profil ID</label>
+    @Html.TextBoxFor(x => x.ProfileID, new { @class = "form-control" })
+    <br />
+    <label> Profil Başlığı</label>
+    @Html.TextBoxFor(x => x.ProfileTitle, new { @class = "form-control" })
+    <br />
+    <label> Profil Açıklama</label>
+    @Html.TextBoxFor(x => x.ProfileDescripton, new { @class = "form-control" })
+    <br />
+    <label> İsim</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <br />
+    <label> Mail</label>
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    <label> Adres</label>
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+    <label> Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <label> Sosyal Media1</label>
+    @Html.TextBoxFor(x => x.SocilaMedia1, new { @class = "form-control" })
+    <br />
+    <label> Sosyal Media2</label>
+    @Html.TextBoxFor(x => x.SocialMedia2, new { @class = "form-control" })
+    <br />
+    <label> Sosyal Media3</label>
+    @Html.TextBoxFor(x => x.SocialMedia3, new { @class = "form-control" })
+    <br />
+    <label> Sosyal Media4</label>
+    @Html.TextBoxFor(x => x.SocialMedia4, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Verileri Güncelle</button>
+</form>
