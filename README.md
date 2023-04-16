@@ -17,7 +17,7 @@ Contact Section
 
 @Admin Panel
 
-Service List 
+Skill List 
 -----------
 ![Hizmet](https://user-images.githubusercontent.com/106198602/232319583-d0ed9bb4-fc7f-4aef-b28f-987cb795a252.png)
 
