@@ -12,7 +12,8 @@ About Section
 
 Contact Section
 ------------
-![Section](https://user-images.githubusercontent.com/106198602/232319508-7849162f-fc7e-406d-863f-0f51e6791dd2.png)
+![Contact](https://user-images.githubusercontent.com/106198602/232319699-608f142c-c7b9-495b-aba1-e7b825721b7f.png)
+
 
 @Admin Panel
 
